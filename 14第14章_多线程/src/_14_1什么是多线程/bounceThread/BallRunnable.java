@@ -17,7 +17,7 @@ public class BallRunnable implements Runnable {
 	private Ball ball;
 	private Component component;
 	public static final int STEPS=2000;
-	public static final int DELEY=1;//ms
+	public static final int DELEY=1; //ms
 
 	/**
 	 * Constructs the runnable.

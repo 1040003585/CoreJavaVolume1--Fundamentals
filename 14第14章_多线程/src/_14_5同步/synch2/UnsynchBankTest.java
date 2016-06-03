@@ -1,4 +1,6 @@
-package _14_5同步.unsynch;
+package _14_5同步.synch2;
+
+import _14_5同步.synch2.Bank_synch;
 
 /**
  * 
@@ -19,7 +21,7 @@ public class UnsynchBankTest {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Bank_unsynch bank = new Bank_unsynch(NACOUNTS,INITIAL_BALANCE);
+		Bank_synch bank = new Bank_synch(NACOUNTS,INITIAL_BALANCE);
 		
 		for (int f = 0; f < NACOUNTS; f++) {
 			TransferRunnable r = new TransferRunnable(bank,f,INITIAL_BALANCE);

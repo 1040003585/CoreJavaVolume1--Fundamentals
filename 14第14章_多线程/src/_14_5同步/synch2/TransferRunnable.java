@@ -1,4 +1,4 @@
-package _14_5同步.unsynch;
+package _14_5同步.synch2;
 
 /**
  * Copyright ? 2016 Authors. All rights reserved.
@@ -10,7 +10,7 @@ package _14_5同步.unsynch;
  */
 public class TransferRunnable implements Runnable {
 
-	private Bank_unsynch bank;
+	private Bank_synch bank;
 	private int fromAccount;
 	private double maxAmount;
 	private int DELAY=10;
@@ -21,7 +21,7 @@ public class TransferRunnable implements Runnable {
 	 * @param from the account to transfer money from
 	 * @param max the maximum amount of money in each transfer
 	 */
-	public TransferRunnable(Bank_unsynch b,int from,double max) {
+	public TransferRunnable(Bank_synch b,int from,double max) {
 		// TODO Auto-generated constructor stub
 		bank=b;
 		fromAccount=from;

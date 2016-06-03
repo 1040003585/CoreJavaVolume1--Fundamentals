@@ -1,4 +1,4 @@
-package _14_5同步.unsynch;
+package _14_5同步.synch;
 
 /**
  * 
@@ -9,9 +9,9 @@ package _14_5同步.unsynch;
  * Date/Time: 2016-5-16/下午05:07:36
  * Description: This program shows data corruption when multiple threads access a data structure.
  */
-public class UnsynchBankTest {
+public class SynchBankTest {
 
-	public static final int NACOUNTS=10;
+	public static final int NACOUNTS=3;
 	public static final double INITIAL_BALANCE=1000;
 	
 	/**
@@ -19,7 +19,7 @@ public class UnsynchBankTest {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Bank_unsynch bank = new Bank_unsynch(NACOUNTS,INITIAL_BALANCE);
+		Bank_synch bank = new Bank_synch(NACOUNTS,INITIAL_BALANCE);
 		
 		for (int f = 0; f < NACOUNTS; f++) {
 			TransferRunnable r = new TransferRunnable(bank,f,INITIAL_BALANCE);
